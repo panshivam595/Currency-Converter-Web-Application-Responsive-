@@ -134,13 +134,13 @@ function rotateCurrency() {
 
 function convertCurrency() {
   fetch(
-    "https://v6.exchangerate-api.com/v6/f36857f5b566fbd6ba7aa3ac/latest/" +
+    "https://v6.exchangerate-api.com/v6/137bc556d5529c71f23a7e1d/latest/" +
       fromCountry.value
   )
     .then((response) => response.json())
     .then((data1) => {
       fetch(
-        "https://v6.exchangerate-api.com/v6/f36857f5b566fbd6ba7aa3ac/latest/" +
+        "https://v6.exchangerate-api.com/v6/137bc556d5529c71f23a7e1d/latest/" +
           toCountry.value
       )
         .then((response) => response.json())
